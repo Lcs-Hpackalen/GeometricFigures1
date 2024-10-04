@@ -17,10 +17,13 @@ struct SphereView: View {
     var body: some View {
         VStack{
             // add image later on
-            
+            Image("SphereDiagram")
+                .resizable()
+                .scaledToFit()
+                .border(.red)
             // add label to describe what slider is for
             Text("Radius")
-            
+                
             // make slider control to allow for user intput
             Slider(
                 value: $currentSphere.radius,
@@ -43,6 +46,7 @@ struct SphereView: View {
             //(show the circumfrence)
             Text("Circumfrence is: \(currentSphere.circumfrence.formatted())")
         }
+        .padding()
     }
 }
 
