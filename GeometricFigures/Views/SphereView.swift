@@ -27,9 +27,21 @@ struct SphereView: View {
                 in: 1...100,
                 step: 1.0
             )
-            
+            // input
             // Label to show current label value
             Text("Radius is: \(currentSphere.radius.formatted())")
+            
+            //(show the diameter)
+            Text("Diameter is: \(currentSphere.diameter.formatted())")
+            
+            //(show the volume)
+            Text("Volume is: \(currentSphere.volume.formatted())")
+            
+            //(show the surface area)
+            Text("Surface Area is: \(currentSphere.surfaceArea.formatted())")
+            
+            //(show the circumfrence)
+            Text("Circumfrence is: \(currentSphere.circumfrence.formatted())")
         }
     }
 }
